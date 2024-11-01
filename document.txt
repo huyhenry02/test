@@ -60,22 +60,23 @@ Training Java
 		+ Tập trung vào tính năng quan trọng: Tính trừu tượng giúp bạn tập trung vào các tính năng và hành vi quan trọng mà đối tượng nên có mà không bị phân tâm bởi chi tiết triển khai.
 		+ Bảo trì và mở rộng dễ dàng: Bằng cách tạo lớp trừu tượng và định nghĩa giao diện, bạn có thể đảm bảo rằng các đối tượng tuân thủ các quy tắc cố định và dễ mở rộng tính năng trong tương lai.
 		+ Che giấu chi tiết phức tạp: Tính trừu tượng cho phép bạn che giấu chi tiết triển khai bên trong các lớp con, giúp làm cho mã nguồn trở nên dễ đọc và dễ bảo trì.
-	1.4 Java collection
-	1.5 Xử lý ngoạilệ
-	1.6 Lập trình đa luồng
-	1.7 Design Pattern
 2. Java Core
-	2.1 Các lớp
-	và phương thức cơ bản
-	2.2 Generics
-	2.3 Java I/O và NIO(New Input/Output)
-	2.4 Reflection và Annotation
-	2.5 Networking trongJava
-	2.6 Quản lý bộ nhớ và Garbage Collectionc
+	2.1 Java collection
+	2.2 Xử lý ngoạilệ
+	2.3 Lập trình đa luồng
+	2.4 Design Pattern
+	2.5 Các lớp và phương thức cơ bản
+	2.6 Generics
+	2.7 Java I/O và NIO(New Input/Output)
+	2.8 Reflection và Annotation
+	2.9 Networking trong Java
+	2.10 Quản lý bộ nhớ và Garbage Collection
 3. Java API và Frameworks
 	3.1 Stream API
 	3.2 Modules (Java 9+)
-4. Xây dựng dự án thực tế
+4. Spring FW
+5. DevOps
+6. Xây dựng dự án thực tế
 
 
 BT thực hành:
@@ -89,5 +90,3 @@ BT thực hành:
 - Viết chương trình Java để tìm phần nguyên và phần dư khi chia hai số.
 - Viết chương trình tìm tất cả các số chia hết cho 7 nhưng không phải bội số của 5, nằm trong đoạn 10 và 200 (tính cả 10 và 200).
 Các số thu được sẽ được in thành chuỗi trên một dòng, cách nhau bằng dấu phẩy.
-
-
