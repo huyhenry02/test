@@ -4,9 +4,10 @@ public class InputOutputBank {
     static Scanner scanner = new Scanner(System.in);
     
     static void inputBank(Account account) {
-        System.out.print("Enter your account number: ");
-        account.setAccountNumber(Long.parseLong(scanner.nextLine()));
-        System.out.print("Enter your account name: ");
+        System.out.println("Enter your account number: ");
+        account.setAccountNumber(scanner.nextInt());
+        scanner.nextLine();
+        System.out.println("Enter your account name: ");
         account.setAccountName(scanner.nextLine());
         account.setBalance(100000);
     }
@@ -45,9 +46,9 @@ public class InputOutputBank {
                     }
                     break;
                 case 3:
-                    System.out.println("Nhập số tài khoản khách hàng cần nạp tiền: ");
+                    System.out.println("Enter your account number: ");
                     s = scanner.nextLong();
-                    System.out.println("Nhập số tiền cần nạp: ");
+                    System.out.println("Enter money need recharge: ");
                     amount = scanner.nextDouble();
                     for (int i = 0; i < n; i++) {
                         d = a[i].getAccountNumber();

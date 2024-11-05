@@ -62,6 +62,31 @@ Training Java
 		+ Che giấu chi tiết phức tạp: Tính trừu tượng cho phép bạn che giấu chi tiết triển khai bên trong các lớp con, giúp làm cho mã nguồn trở nên dễ đọc và dễ bảo trì.
 2. Java Core
 	2.1 Java collection
+	- collections là một khung framework cung cấp kiến trúc để lưu trữ và thao tác trên tập hợp đối tượng, cho phép làm việc với các dữ liệu phức tạp và cung cấp các giao diện ví dụ:
+	List, Set (tập hợp), hàng đợi (queue), và ánh xạ (Map)
+	- Hệ thống phân cấp Collection Framework:
+		+ Java Collection Framework là một bộ thư viện với rất nhiều class mạnh mẽ giúp bạn đơn giản hóa các thao tác khi làm việc với tập hợp và đồ thị.
+		+ thành phần trong framework bao gồm:
+			++> Interface: kiểu dữ liệu trừu tượng
+			++> Classes: các lớp triển khai interface, thể hiện các kiểu dữ liệu cụ thể
+			++> Algorithm: các thuật toán sử dụng trong các phương thức thao tác với dữ liệu
+	- Cài đặt trong collections:
+		+ gói java.util cung cấp tập các lớp cài đặt các giao diện lõi -> tạo ra những cấu trúc dữ liệu như: Vector, HashTable, HashSet, LinkedList, TreeSet, ...
+	- Phần interface trong collections:
+		+ Giao diện (interface) Collection là cơ sở để phát triển, mở rộng thành các giao diện khác như Set, List, SortedSet và Map và giao diện cơ sở để mở rộng thành SortedMap.
+		+ Các giao diện lõi của cấu trúc Collection được mô tả trong bảng sau:
+			Collection        interface cơ sở định nghĩa tất cả các phép toán cơ bản cho các lớp cần duy trì thực hiện và cài đặt chúng
+			Set               là một collection không thể chứa 2 giá trị trùng lặp.
+			SortedSet 		  Mở rộng Set để cài đặt cấu trúc tập hợp được sắp, trong đó không có phần tử được lặp và chúng được sắp xếp theo thứ tự
+			Queue             là một collection được sử dụng để chứa nhiều phần tử trước khi xử lý.
+			Deque			  là một collection được sử dụng để chứa nhiều phần tử trước khi xử lý. Trong một Deque, tất cả các phần tử mới có thể được chèn vào, lấy ra và lấy ra ở cả hai đầu.
+			List              là một collection có thứ tự (đôi khi còn được gọi là một chuỗi). List có thể chứa các phần tử trùng lặp.
+			Map               interface cơ sở định nghĩa các phép toán để các lớp sử dụng và cài đặt các ánh xạ từ khoá sang các giá trị
+	- Phần thuật toán trong collections:
+		+ Lớp java.util.Collection (cần phân biệt với giao diện Collection) cung cấp một số hàm static thực hiện những thuật toán đa xạ cho những phép toán khác nhau trên tập hợp, kể cả sắp xếp, tìm kiểm và dịch chuyển các phần tử.
+		+ Một số hàm trong số đó là: Sử dụng thuật toán tìm kiếm nhị phân để xác định chỉ số của phần tử key trong danh sách list.
+	- Collection trong Java:
+		+
 	2.2 Xử lý ngoạilệ
 	2.3 Lập trình đa luồng
 	2.4 Design Pattern

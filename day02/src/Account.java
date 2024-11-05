@@ -48,36 +48,28 @@ public class Account {
     }
     
     public void rechargeMoney(double amount) {
-        System.out.print("Enter amount need recharge: ");
-        amount = scanner.nextDouble();
-        
         if (amount >= 0) {
             balance += amount;
             NumberFormat currencyEN = NumberFormat.getCurrencyInstance();
             String str1 = currencyEN.format(balance);
-            System.out.println("You recharged" + str1 + "in your account");
+            System.out.println("You recharged " + str1 + " in your account");
         } else {
             System.out.println("Insufficient funds");
         }
     }
     
     public void withdrawMoney(double amount) {
-        System.out.print("Enter amount withdraw: ");
-        amount = scanner.nextDouble();
-        
         if (amount >= 0) {
             balance -= amount;
             NumberFormat currencyEN = NumberFormat.getCurrencyInstance();
             String str1 = currencyEN.format(balance);
-            System.out.println("You withdrawn" + str1 + "in your account");
+            System.out.println("You withdrawn " + str1 + " in your account");
         } else {
             System.out.print("Insufficient funds");
         }
     }
     
     public void maturity(double interestRate) {
-        System.out.print("Enter amount interest Rate: ");
-        interestRate = scanner.nextDouble();
         if (interestRate >= 0) {
             balance = balance + balance * interestRate;
             NumberFormat currencyEN = NumberFormat.getCurrencyInstance();
